@@ -25,7 +25,7 @@
   <include file="f1sim-laptime_table.xml"/> 
   <!-- <include file="f1sim-session-history_table.xml"/>  -->
   <include file="f1sim-telemetry_table.xml"/> 
-  <include file="f1sim-device_table.xml"/> 
+  <!-- <include file="f1sim-device_table.xml"/> -->
   <include file="f1sim-motion_table.xml"/> 
   <include file="f1sim-lapdata_comments.xml"/> 
   <include file="f1sim-telemetry_comments.xml"/> 
