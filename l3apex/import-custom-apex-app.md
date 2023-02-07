@@ -14,28 +14,27 @@ An APEX Workspace is a logical domain where you define APEX applications. Each w
 
 1. Download "Formula-Pi" APEX app [files](files/APEXapps.zip)
 
-2. Click on hamburger menu and select "APEX Workspaces"  
+2. Click on _hamburger menu_ and select _APEX Workspaces_
    ![](images/4backToHome.png)  
-        (optional) You can navigate to APEX Workspaces from "DB Actions" homepage  
+        (optional) You can navigate to _APEX Workspaces_ from "DB Actions" homepage  
         ![](images/5aAPEX.png " ")  
-        (optional) You can navigate to APEX Workspaces from "Oracle Cloud Console"      
+        (optional) You can navigate to _APEX Workspaces_ from "Oracle Cloud Console"      
         ![](images/5bAPEX.png " ")  
 3. Log in to your Oracle APEX instance.  
    ![](images/6APEXWorkspaceLogin.png " ")
-4. Click App Builder > Import  
+4. Click _App Builder_ > _Import_  
 ![importAppBuilder](images/4importAppBuilder.png)
 1.  Drag and drop f199.sql into the dotted box
 ![Import Drag](images/4appImport.png)
-1.  Click Next to import the file
+1.  Click _Next_ to import the file
  ![Import Step](images/importStep.png)  
-2.  Click Next for install options
+2.  Click _Next_ for install options
 3.  Leave all others as default
-4.  Click Install Application
+4.  Click _Install Application_
    ![Import Install](images/4importInstall.png)
-5.  Well Done.
 
 ### Access your APEX app
-8.  Click Run Application
+8.  Click _Run_ Application
    ![runl](images/run.png)
 9.  Sign in as APEX user “F1_HOL”  
 ![importInstall](images/5logIn.png)

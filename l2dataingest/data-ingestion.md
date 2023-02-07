@@ -24,36 +24,35 @@ This lab assumes you have:
 ### Official Data Packet definition
 For latest packet definition please visit [here](https://racinggames.gg/f1/f1-22-update-117-patch-notes/)
 
-## Task 1: Log to your VM via SSH
+## Task 1: Log in to your VM via SSH
 
-1. In Cloud Console navigate to Instance and Compute
+1. In Cloud Console navigate to _Instance_ and _Compute_
 2. Check IP address
    ![instance](images/instance.png) 
-3. Log using cloud shell or any other ssh client
-   
+3. Log in using Cloud Shell or other ssh client
    
 ## Task 2: Data Ingestion configuration and authentication
-1. In terminal Run `$F1SIM_HOME/bin/install_di.sh`
+1. In terminal Run: `$F1SIM_HOME/bin/install_di.sh`
     ![yaml](images/install.gif) 
-2. On your first prompt add your Python version i.e. `3.9`
+2. Add your Python version i.e. `3.9`
    ![yaml](images/python.gif) 
-3. Enter your RabbitMQ login and password (We will need them later)
+3. Create RabbitMQ login and password (We will need them later)
    ![yaml](images/messaging.gif)
-4. Duplicate f1store.yaml.template - `cp f1store.yaml.template f1store.yaml`
-5. Configure f1store.yaml with text editor like vim or nano - `vim f1store.yaml`
+4. Once completed duplicate ***f1store.yaml.template *** - `cp f1store.yaml.template f1store.yaml`
+5. Configure ***f1store.yaml*** with text editor like vim or nano - `vim f1store.yaml`
 6. Add following to your .yaml config file:
-   1.  _gamehost_ - string
-   2.  _devicename_ - string
-   3.  version - integer game packet configuration
+   1.  ***gamehost*** - string
+   2.  ***devicename*** - string
+   3.  ***version*** - integer game packet configuration
     ![yaml](images/yaml.gif) 
-   4.  Add RabbitMQ details from step 5 _rmqusername_, _rmqpassword_
+   4.  Add RabbitMQ details from step 5 ***rmqusername***, ***rmqpassword***
     ![rabbit](images/rabbit.gif) 
-   5.  _dbusername_ - from your stack
-   6.  _dbpassword_ - from your stack 
-   7.  _dburl_ in Cloud Shell Run `cat Wallet/tnsnames.ora`
-    ![tns](images/tns.gif) 
-7.  Run `./bin/start.sh` to start services
-   ![start](images/start.gif) 
+   5.  ***dbusername*** - from your stack
+   6.  ***dbpassword*** - from your stack 
+   7.  ***dburl*** in Cloud Shell Run `cat Wallet/tnsnames.ora`
+    ![tns](images/tns.png) 
+7.  Run: `./bin/start.sh` to start services
+   ![start](images/start.png) 
 
 ## (Optional)Task 2: Setting up Edge Device
 
